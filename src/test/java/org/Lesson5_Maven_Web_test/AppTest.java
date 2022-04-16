@@ -223,7 +223,7 @@ public class AppTest extends SiteInitialization {
 
     @Test
     @DisplayName("Тест-кейс: перейти на акции из каталога")
-    void testNotTriangle(){
+    void testGoToStockFromCatalog(){
         // метод для увеличения времени ожидания отображения элекмента на странице,
         // и пока он ждёт он не бросает исключения
         Wait<WebDriver> wait = new FluentWait<WebDriver>(getDriver())
