@@ -34,13 +34,11 @@
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
       <version>${selenium.version}</version>
-      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>io.github.bonigarcia</groupId>
       <artifactId>webdrivermanager</artifactId>
       <version>${webdrivermanager.version}</version>
-      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.junit.platform</groupId>
@@ -52,14 +50,12 @@
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
       <version>${junit.version}</version>
-      <scope>test</scope>
     </dependency>
     <!-- Работа с параметризованными тестами в jUnit -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-params</artifactId>
       <version>${junit.version}</version>
-      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -72,13 +68,11 @@
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
       <version>1.2.3</version>
-      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-core</artifactId>
       <version>1.2.6</version>
-      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
