@@ -189,7 +189,7 @@ public class AppTest extends SiteInitialization {
         } catch (NoSuchElementException | ElementNotInteractableException | StaleElementReferenceException e) {
             logger.info(e.getMessage());
         }
-        logger.info("Тест-кейс по добавлению продукта в избранное пройден!");
+        logger.info("Тест-кейс по отправлению текста сообщения CRM пройден!");
     }
 
 
