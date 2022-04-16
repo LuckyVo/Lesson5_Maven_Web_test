@@ -16,7 +16,7 @@ public abstract class SiteInitialization {
     private static WebDriver driver;
 
     @BeforeAll
-    static void initClass() {
+    static void initDriver() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
@@ -28,18 +28,18 @@ public abstract class SiteInitialization {
     }
 
     @BeforeEach
-    void initSite() {
+    void initMainPage() {
         Assertions.assertDoesNotThrow( ()-> driver.navigate().to("https://xochy-xochy.com/"),
                 "Страница не доступна");
+        Assertions.assertTrue(true);
     }
 
     @AfterAll
-    static void finalClass() {
-//        driver.quit();
+    public static void exit() {
+//        if(driver !=null) driver.quit();
     }
 
-
-    public static WebDriver getDriver() {
-        return driver;
+    public WebDriver getDriver() {
+        return this.driver;
     }
 }
